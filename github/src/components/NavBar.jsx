@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import logo from '../img/github.svg'
 
 const NavBar = ({ changeUser }) => {
   const [searchTerm, setSearchTerm] = useState("");
@@ -11,7 +12,10 @@ const NavBar = ({ changeUser }) => {
 
   return (
     <div className="navbar">
-      <h1>GitHub</h1>
+    <div className="logo-full">
+      <img className="logo" src={logo}></img>
+      <h1 className="logo-txt">GitHub</h1>
+      </div>
       <div className="searchbar">
       <label htmlFor="name">Search:</label>
       <input

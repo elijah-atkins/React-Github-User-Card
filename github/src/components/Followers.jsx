@@ -26,7 +26,7 @@ const Followers = ({ followers, following }) => {
     }
     return (
         <div>
-        {followView ? <div><button disabled>Followers</button><button onClick={flipFollow}>Following</button></div>: <div><button onClick={flipFollow}>Followers</button><button disabled>Following</button></div>}
+        {followView ? <div className="button-grid"><div className="button off">Followers</div><div className="button" onClick={flipFollow}>Following</div></div>: <div className="button-grid"><div className="button" onClick={flipFollow}>Followers</div><div className="button off">Following</div></div>}
         {followView ? follow(followers):follow(following)}
         
         </div>

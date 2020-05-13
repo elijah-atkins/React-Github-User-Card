@@ -15,3 +15,16 @@ button {
 input {
     font-size: clamp(1rem, 3vw, 4rem);
 }
+.logo-full {
+    display: flex;
+    flex-direction: row;
+}
+.logo-txt{
+    margin-top: 1rem;
+}
+.logo {
+
+    width: clamp(4rem, 8vw, 8rem);
+    height: clamp(4rem, 8vw, 8rem);
+
+}
