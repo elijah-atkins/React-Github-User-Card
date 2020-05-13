@@ -46,3 +46,31 @@
     padding: 1rem;
 
 }
+.button-grid {
+    margin-left: 2rem;
+    padding-top: .5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    @include mid-view() {
+        margin-left: 6rem;
+    }
+    @include phone-view(){
+        margin-left: 4.2rem;
+    }
+}
+.button {
+    background-color: $white;
+    padding-top: 1rem;
+    cursor: pointer;
+    width: 5rem;
+    height: 2rem;
+    border-radius: 15px 15px 0 0 ;
+
+
+} 
+
+.off {
+    background-color: darken($color: $white, $amount: 10);
+}
+    
